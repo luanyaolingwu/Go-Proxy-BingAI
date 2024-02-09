@@ -63,13 +63,13 @@ jobs:
         with:
           tag_name: Workflow-${{ github.run_number }}
           files: |
-            go-proxy-bingai-linux-amd64.tar.gz
-            go-proxy-bingai-linux-arm64.tar.gz
-            go-proxy-bingai-linux-armv7.tar.gz
-            go-proxy-bingai-windows-amd64.tar.gz
-            go-proxy-bingai-windows-arm64.tar.gz
-            go-proxy-bingai-darwin-amd64.tar.gz
-            go-proxy-bingai-darwin-arm64.tar.gz
+            app-linux-amd64.tar.gz
+            app-linux-arm64.tar.gz
+            app-linux-armv7.tar.gz
+            app-windows-amd64.tar.gz
+            app-windows-arm64.tar.gz
+            app-darwin-amd64.tar.gz
+            app-darwin-arm64.tar.gz
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - uses: actions/upload-artifact@v3
