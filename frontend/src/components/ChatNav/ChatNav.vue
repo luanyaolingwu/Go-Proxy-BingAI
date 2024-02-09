@@ -79,7 +79,7 @@ const navConfigs = [
   },
   {
     key: navType.compose,
-    label: '寫文章',
+    label: '撰寫文章',
     url: '/web/compose.html',
   },
   {
@@ -385,7 +385,7 @@ const autoPassCFChallenge = async () => {
     </NModal>
     <NModal v-model:show="isShowAdvancedSettingModal" preset="dialog" :show-icon="false">
       <template #header>
-        <div class="text-3xl py-2">高階設定</div>
+        <div class="text-3xl py-2">進階設定</div>
       </template>
       <NForm ref="formRef" label-placement="left" label-width="auto" require-mark-placement="right-hanging"
         style="margin-top: 16px;">
@@ -438,7 +438,7 @@ const autoPassCFChallenge = async () => {
       </template>
       <template #action>
         <NButton size="large" @click="isShowClearCacheModal = false">Cancel</NButton>
-        <NButton ghost size="large" type="error" @click="resetCache">Save</NButton>
+        <NButton ghost size="large" type="error" @click="resetCache">Sure</NButton>
       </template>
     </NModal>
     <NModal v-model:show="isShowSetAboutModal" preset="dialog" :show-icon="false">

@@ -44,19 +44,19 @@ const useDemo = () => {
 </script>
 
 <template>
-  <NModal class="w-11/12 lg:w-[540px] select-none" v-model:show="isShowModal" :on-close="onClose" preset="card" title="图像创建">
+  <NModal class="w-11/12 lg:w-[540px] select-none" v-model:show="isShowModal" :on-close="onClose" preset="card" title="映像建立">
     <head class="flex justify-center gap-3 px-8">
       <NInput class="flex-1" placeholder="提示词" v-model:value="keyword" :clearable="true" @keyup.enter="createImage" maxlength="100"></NInput>
       <NButton secondary type="info" @click="createImage" :loading="isCreating">开始创建</NButton>
     </head>
     <main class="flex justify-center items-center">
       <iframe v-if="iframeSrc" class="w-[310px] h-[350px] xl:w-[475px] xl:h-[520px] my-4" :src="iframeSrc" frameborder="0" @load="isCreating = false"></iframe>
-      <NEmpty v-else class="h-[40vh] xl:h-[60vh] flex justify-center items-center" description="暂未创建">
+      <NEmpty v-else class="h-[40vh] xl:h-[60vh] flex justify-center items-center" description="暫未創建">
         <template #extra>
-          <NButton secondary type="info" @click="useDemo">使用示例创建</NButton>
+          <NButton secondary type="info" @click="useDemo">使用示例創建</NButton>
           <div class="text-[#c2c2c2] px-2 xl:px-10">
-            <p class="text-left">提示：形容词+名词+动词+风格，描述得越详细时，效果越好。</p>
-            <p class="text-left">示例：{{ DEMO_KEYWORD }}</p>
+            <p class="text-left">小貼士：形容詞+名詞+動詞+風格，描述越詳細時，效果越好。</p>
+            <p class="text-left">示範：{{ DEMO_KEYWORD }}</p>
           </div>
         </template>
       </NEmpty>
