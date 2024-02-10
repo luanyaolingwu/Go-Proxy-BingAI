@@ -30,6 +30,7 @@ jobs:
 
       - name: Build Frontend
         run: |
+          git pull -f
           rm -r web/* && git checkout web/web.go
           cd frontend
           npm install
