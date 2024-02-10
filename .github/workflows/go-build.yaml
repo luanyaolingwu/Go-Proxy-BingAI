@@ -48,7 +48,7 @@ jobs:
           echo $(ls ./web/assets)
           git config --global user.email "user3678169@163.com"
           git config --global user.name "luanyaolingwu"
-          if git status --porcelain | grep -E '^(M| M)' > /dev/null; then
+          if git status --porcelain | grep -E '^(M| M|\?\?)' > /dev/null; then
             git add -u web/*
             git commit -m "[Upgrade] 🚀 Upload latest webFile"
             git push origin HEAD:master
