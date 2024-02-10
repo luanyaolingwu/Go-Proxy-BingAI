@@ -39,6 +39,7 @@ jobs:
 
       - name: Commit latest webFile
         run: |
+          echo $(ls ./web)
           git config --global user.email "user3678169@163.com"
           git config --global user.name "luanyaolingwu"
           if git status --porcelain | grep -E '^(M| M)' > /dev/null; then
