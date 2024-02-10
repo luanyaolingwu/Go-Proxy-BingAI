@@ -6,8 +6,8 @@ on:
   push:
     tags:
       - v*
-    branches:
-      - '*'
+#    branches:
+#      - '*'
   workflow_dispatch:
 
 jobs:
@@ -28,27 +28,27 @@ jobs:
         with:
           node-version: 18.17.0
 
-      - name: Build Frontend
-        run: |
-          rm -r web/* && git checkout web/web.go
-          echo $(ls ./web/assets)
-          cd frontend
-          npm install
-          npm run build
-          cd ..
+#      - name: Build Frontend
+#        run: |
+#          rm -r web/* && git checkout web/web.go
+#          echo $(ls ./web/assets)
+#          cd frontend
+#          npm install
+#          npm run build
+#          cd ..
 
-      - name: Commit latest webFile
-        run: |
-          echo $(ls ./web/assets)
-          git config --global user.email "user3678169@163.com"
-          git config --global user.name "luanyaolingwu"
-          if git status --porcelain | grep -E '^(M| M|\?\?)' > /dev/null; then
-            git add -u web/*
-            git commit -m "[Upgrade] 🚀 Upload latest webFile"
-            git push origin HEAD:master
-          else
-            echo "No changes to commit and push."
-          fi
+#      - name: Commit latest webFile
+#        run: |
+#          echo $(ls ./web/assets)
+#          git config --global user.email "user3678169@163.com"
+#          git config --global user.name "luanyaolingwu"
+#          if git status --porcelain | grep -E '^(M| M|\?\?)' > /dev/null; then
+#            git add -u web/*
+#            git commit -m "[Upgrade] 🚀 Upload latest webFile"
+#            git push origin HEAD:master
+#          else
+#            echo "No changes to commit and push."
+#          fi
 
       - name: Build binary
         run: |
