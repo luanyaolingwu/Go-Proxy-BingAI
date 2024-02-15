@@ -87,6 +87,10 @@ const navConfigs = ref([
   {
     key: navType.reset,
     label: '一鍵重置',
+  },
+  {
+    key: navType.about,
+    label: '关于'
   }
 ]);
 
