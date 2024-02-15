@@ -87,16 +87,6 @@ const navConfigs = ref([
   {
     key: navType.reset,
     label: '一鍵重置',
-  },
-  {
-    label: '淺色',
-    value: 'light',
-  }, {
-    label: '深色',
-    value: 'dark',
-  }, {
-    label: '跟隨作業系統',
-    value: 'auto',
   }
 ]);
 
