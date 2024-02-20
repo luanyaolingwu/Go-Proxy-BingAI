@@ -15,7 +15,9 @@ declare const _G: {
   SP: Array<number>;
   TIP: string;
   TIPC: string;
+  TP: string;
   SB: boolean;
+  AT: string;
 }
 
 declare const base58Encode: (n: string) => string;
@@ -337,4 +339,6 @@ declare const CIB: {
 
   changeColorScheme: (O: 0 | 1) => {};
   registerContext: (O) => {};
+  showConversation: () => {};
+  showNotebook: () => {};
 };

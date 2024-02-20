@@ -6,7 +6,7 @@
 
 基于微软 New Bing 定制的微软 BingAI 演示站点
 
-一致UI 体验, ChatGPT 提示词, 基本兼容 BingAI 所有功能, 支持 OpenAI 格式 API 调用
+一致UI 体验, ChatGPT 提示词, 基本兼容 BingAI 所有功能, 一键登录, 支持 API 调用
 
 一键部署, 国内可用, 无需登录即可畅聊
 
@@ -70,6 +70,8 @@
 
 ✅ 支持现有开源 ChatGPT 提示词库
 
+✅ 一键登录 (需配合[油猴脚本使用](https://greasyfork.org/zh-CN/scripts/487409-go-proxy-bingai))
+
 ✅ 登录账号支持画图
 
 ✅ 支持 OpenAI 格式 API 调用 - [📝 Wiki文档](https://github.com/Harry-zklcdc/go-proxy-bingai/wiki/BingAPI)
@@ -123,7 +125,9 @@
 
 [![Github Issus](https://img.shields.io/github/issues/Harry-zklcdc/go-proxy-bingai?style=flat-square&logo=github)](https://github.com/Harry-zklcdc/go-proxy-bingai/issues)
 
-[![加入 Telegram 频道](https://img.shields.io/badge/加入_Telegram_频道-ProxyBingAI🚀-blue?style=flat-square&logo=telegram)](https://t.me/GoProxyBingAI)
+[![加入 Telegram 群组](https://img.shields.io/badge/加入_Telegram_群组-ProxyBingAI🚀-blue?style=flat-square&logo=telegram)](https://t.me/GoProxyBingAI)
+
+[![加入 Discord 服务器](https://img.shields.io/badge/加入_Discord_服务器-ProxyBingAI🚀-slateblue?style=flat-square&logo=discord)](https://discord.gg/gHUhHqMp8s)
 
 
 ## ❗️ 免责声明
